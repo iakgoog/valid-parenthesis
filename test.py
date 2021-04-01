@@ -1,7 +1,7 @@
 def solution(s):
 	pair = []
 	for ch in s:
-		if ch in ['(', '[', '{']:
+		if ch in '([{':
 			pair.append({
 				'(': ')',
 				'[': ']',
