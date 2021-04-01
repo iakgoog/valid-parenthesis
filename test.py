@@ -1,13 +1,12 @@
 def solution(s):
 	pair = []
-	closing = {
-		'(': ')',
-		'[': ']',
-		'{': '}',
-	}
 	for ch in s:
-		if ch in closing:
-			pair.append(closing[ch])
+		if ch == '(':
+			pair.append(')')
+		elif ch == '[':
+			pair.append(']')
+		elif ch == '{':
+			pair.append('}')
 		elif pair[-1] == ch:
 			pair.pop()
 		else:
